@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Feedback us
+</title>
+ <link rel="icon" href="tour.PNG"type="image/PNG">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Sacramento&family=Tangerine&display=swap" rel="stylesheet">
+    <style>
+      #travel{padding-left: 100px; display: inline;}
+      #serch{border-radius: 20px; height: 50px;width: 600px; margin-left: 80px; display: inline; text-align: center; color: red;font-family: cursive;font-size: 20px;}
+    </style>
+</head>
+  <body>
+    <table>
+        <tr>
+     <td> <img src="tour.PNG" height="225px" width="250px" id="travel"></td>
+      <td><input type="text" name="search" id="serch" placeholder="Search= Home,Place,Bookings,Feedback"></td>
+      <td><button style="border-color: red;padding: 10px 20px;background-color: orange;border-radius: 20px;" onclick="o()">Search</button></td>
+  </tr>
+  </table>
+  <br/>
+  <br/>
+  <div>
+    <h1 
+    style="font-family: sans-serif;">
+      <center>
+        FEEDBACK
+      </center>
+      <center>
+     __________________________________________________________
+    </center>
+    </h1>
+    <h3>
+      <center>
+        please enter your feedback below
+      </center>
+    </h3>
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <h2 style="font-family: cursive; margin-left: 150px;">
+  Your experience in this website?
+  </h2>
+<form id="asd">
+<lable> <h3 style="margin-left: 150px;"><input type="radio" name="experience" value="bad" id="bad">BAD</h3></lable>
+<lable> <h3 style="margin-left: 150px;"><input type="radio" name="experience" value="average" id="average">AVERAGE</h3></label>
+<lable> <h3 style="margin-left: 150px;"><input type="radio" name="experience" value="execellent" id="execellent">EXECELLENT</h3></lable>
+<br/>
+<br/>
+<table style="margin-left: 200px;
+              height: 300px; 
+              width: 500px;">
+  <tr>
+    <td style="font-size: 20px;">
+      Full Name
+    </td>
+    <td>
+      <input type="text" name="name" placeholder="your name" style="height: 40px;" id="zxc">
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px;">
+      E-mail
+    </td>
+    <td>
+      <input type="E-mail" name="mail" placeholder="example@gmail.com" style="height: 40px;" id="vbn">
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px;">
+      Age
+    </td>
+    <td>
+      <input type="number" name="age" placeholder="eg-20" maxlength="2" style="height: 40px;" id="uio">
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 20px;">
+      phone number
+    </td>
+    <td>
+      <input type="text" name="tel" placeholder="eg-9999999999" maxlength="10" style="height: 40px;" id="jkl">
+    </td>
+  </tr>
+</table>
+</form>
+<br/>
+<button id="qwe" onclick="rty()" style="border-color: red;
+                                        bottom: 10px;
+                                        padding: 20px 30px;
+                                        background-color: orange;
+                                        border-radius: 30px;
+                                        margin-left: 200px;">
+                  SUBMIT
+               </button>
+               <a href="travelandtour.html">return to home</a>
+  <script>
+    function rty() 
+    {
+      var a=document.getElementById("bad");
+      var b=document.getElementById("zxc");
+      var c=document.getElementById("average");
+      var d=document.getElementById("vbn");
+      var e=document.getElementById("uio");
+      var f=document.getElementById("jkl");
+      var g=document.getElementById("execellent");
+
+      if (a.checked==false|| c.checked==false|| g.checked=false )
+      {  
+         alert("plz feedback it by entering bad,average,execellent");
+         return false;
+      }
+      else if(b.value=="")
+      {
+       alert("plz enter name");
+       return false;
+      }
+     else if(d.value=="")
+      {
+       alert("plz enter your e-mail");
+       return false;
+      }
+      else if(e.value=="")
+      {
+       alert("plz enter your age");
+       return false;
+      }
+       else if(f.value=="")
+      {
+       alert("plz enter your phone number");
+       return false;
+      }
+        if(e.value>=100)
+        {
+          window.alert("plz check your age");
+          return false;
+        }
+        else
+        {
+          window.alert("THANKS FOR YOUR FEEDBACK");
+          return false;
+        }
+      }
+  </script>
+  </body>
+</html>

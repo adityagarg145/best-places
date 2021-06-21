@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+   Sign up to evavisitor
+</title>
+<style>
+   h1{color: lime;text-align: center;text-decoration: underline;}
+   table{border: solid;padding: 60px 95px;margin: 97px 470px;}
+   th,td{padding: 10px 30px;}
+   #qwe{border-color: red;bottom: 10px;padding: 20px 30px;background-color: orange;border-radius: 30px;}
+   body{background-image: url('home1.jpeg');background-repeat: no-repeat;}
+   h1:hover{color: red;}
+</style>
+</head>
+<body>
+   <a href=""><h1> REGISTER EVAVISITOR</h1></a>
+   <form>
+      <table>
+         <tr>
+            <th>
+               FIRST NAME
+            </th>
+            <td>
+              <input type="text" name="qaz" id="vbn"> 
+            </td>
+         </tr>
+         <tr>
+            <th>
+               LAST NAME
+            </th>
+         <td>
+            <input type="text" name="wsx" id="uio">
+         </td>
+         </tr>
+         <tr>
+            <th>
+               PASSWORD
+            </th>
+         <td>
+            <input type="password" name="edc" id="asd">
+         </td>
+         </tr>
+         <tr>
+            <th>
+               RE-ENTER PASSWORD
+            </th>
+         <td>
+            <input type="password" name="rfv" id="zxc">
+         </td>
+         </tr>
+         <tr>
+            <th>
+              PHONE NUMBER 
+            </th>
+         <td>
+            <input type="tel" name="tgb" maxlength="10" id="jkl">
+         </td>
+         </tr>
+         <tr>
+            <th>  
+               AGE
+            </th>
+         <td>
+            <input type="text" name="ujm" maxlength="2" id="age">
+         </td>
+         </tr>
+         <tr>
+            <th>
+               E-MAIL   
+            </th>
+         <td>
+            <input type="email" name="yhn" id="mail">
+         </td>
+         </tr>
+         <tr>
+            <td>
+               <button id="qwe" onclick="rty()">
+                  SUBMIT
+               </button>
+            </td>
+      </table>
+   </form>
+   <script>
+      function rty() 
+      {
+      var a=document.getElementById("asd");
+      var b=document.getElementById("zxc");
+      var d=document.getElementById("vbn");
+      var e=document.getElementById("uio");
+      var f=document.getElementById("jkl");
+      var g=document.getElementById("age");
+      var h=document.getElementById("mail");
+      if(d.value=="")
+      {
+         alert("plz enter first name");
+         return false;
+      }
+      else if(e.value=="")
+      {
+       alert("plz enter last name")
+      }
+     else if(a.value=="")
+      {
+       alert("plz fill the password")
+      }
+      else if(b.value=="")
+      {
+       alert("plz re-enter password")
+      }
+      else if(f.value=="")
+      {
+       alert("plz enter PHONE NUMBER")
+      }
+      else if(g.value=="")
+      {
+       alert("plz enter age")
+      }
+      else if(h.value=="")
+      {
+       alert("plz enter e-mail")
+      }
+     else if(a.value==b.value)
+      {
+         window.location.href ="travelandtour.html";
+         return false;
+      }
+      else
+      {
+         window.alert("please check the password");
+         return false;
+      }
+   }
+   </script> 
+</body>
+</html>
